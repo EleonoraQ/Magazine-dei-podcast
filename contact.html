@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--questo è l'header: contiene info aggiuntive che l'utente non vede-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast's Place</title>
+    <link rel="stylesheet" href="../style/contact.css"> 
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Generi</a>
+            <ul class="dropdown-menu">
+                <li><a href="truecrime.html">True Crime</a></li>
+                <li><a href="informazione.html">Informazione</a></li>
+                <li><a href="relazioni.html">Relazioni e Sentimenti</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="centered-section">
+    <body class="light-theme">
+        <div class="container">
+            <h1>Compila il form se vuoi ricevere la newsletter!</h1>
+            <form action="/submit_form" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                
+                <label for="cognome">Cognome:</label><br>
+                <input type="text" id="cognome" name="cognome" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <input type="submit" value="Invia">
+            </form>
+        </div>
+        <button class="button">Notte</button> 
+        <script src="../dinamic/contact.js"></script>
+        <noscript>Per usare tutte le funzionalità di questo sito devi avere JavaScript attivo</noscript>
+</body>
+</html>
