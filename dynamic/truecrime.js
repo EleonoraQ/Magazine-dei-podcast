@@ -60,16 +60,5 @@ const carousel = document.querySelector('.carousel');
     });
 
 //PER ROTAZIONE CARD
-    function flipCard(event) {
-        // Otteniamo il genitore della card cliccata
-        const card = event.currentTarget.closest('.card');
-        // Aggiungiamo o rimuoviamo la classe "flipped" per ruotare la card
-        card.classList.toggle('flipped');
-    }
 
-    // Seleziona tutte le carte e aggiungi loro un evento di click
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        card.addEventListener('click', flipCard);
-    });
     

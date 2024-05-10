@@ -44,11 +44,6 @@ body{
     height: 100%;
     perspective: 1000px; /* Profondità della prospettiva */
 }
-
-.card.flipped {
-    /* Applica la trasformazione per girare la card */
-    transform: rotateY(180deg);
-}
 .card-img-top {
     width: 100%;
     height: 500px; /* Altezza dell'immagine */
