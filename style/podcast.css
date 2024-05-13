@@ -1,5 +1,5 @@
 *{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial;
     box-sizing: border-box;
 }
 
@@ -9,8 +9,6 @@ body{
     height: 100vh; 
     margin: 0px; 
     backdrop-filter: blur;
-    font-family: Verdana; 
-    background-color: blue;
 }
 
 .carousel {
@@ -33,16 +31,6 @@ body{
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s;
-    transform-style: preserve-3d; /* Mantieni le trasformazioni 3D per i figli */
-}
-
-.card-wrapper {
-    /* Stile per il wrapper della card */
-    position: relative;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px; /* Profondità della prospettiva */
 }
 .card-img-top {
     width: 100%;
@@ -114,4 +102,33 @@ nav ul li a:hover {
 
 .dropdown-menu .hidden {
     display: none;
+}
+
+body{
+    font-family: Verdana; 
+    background-color: blue;
+}
+:root{
+    --grey: #CCCCCC;
+    --white: #fff; 
+    --black:  #000000; 
+}
+
+.button{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:antiquewhite;
+    color: blue;
+    text-shadow: 0.5px 0.5px 0px darkblue; 
+}
+.light-theme{
+    background-repeat: no-repeat;
+    background-color: var(--grey);
+    color:var(--blue); 
+}
+.dark-theme{
+    background-color: var(--black);
+    color: var(--white); 
 }
